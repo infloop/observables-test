@@ -1,0 +1,41 @@
+{
+  "name": "observables-test",
+  "version": "0.0.1",
+  "description": "Playing with Observables",
+  "main": "index.js",
+  "scripts": {
+    "t01": "node ./dist/test-01/index.js",
+    "clean": "rimraf ./dist/*",
+    "build": "npm run clean && npm run tsc",
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infloop/observables-test.git"
+  },
+  "keywords": [
+    "observables"
+  ],
+  "author": "infloop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infloop/observables-test/issues"
+  },
+  "homepage": "https://github.com/infloop/observables-test#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "lodash": "^4.12.0",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.5.6"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.19",
+    "@types/lodash": "4.14.62",
+    "@types/node": "^6.0.61",
+    "publish-please": "^2.2.0",
+    "rimraf": "^2.6.1",
+    "tslint": "^2.5.1",
+    "typescript": "^2.4.2"
+  }
+}
